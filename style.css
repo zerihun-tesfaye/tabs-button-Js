@@ -1,0 +1,128 @@
+*,html{
+  box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   scroll-behavior: smooth;
+}
+body{
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.tab-container{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%); 
+  justify-content:center;
+  align-items: center;
+   max-width:600px ;
+   align-items: center;
+   margin: auto;
+   position: absolute;
+   
+}
+.tab-btn-container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+.tabs{
+  align-items: center;
+  justify-content:center;
+  border-bottom: 1px solid #eee;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding :15px 15px;
+  margin: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing:0.6px;
+  background-color: rgb(214, 214, 214);
+   transition: all 0.5s ease;
+}.tabs:hover{
+   opacity: 0.8;
+   transform: scale(1.03);
+
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px;
+}
+.card{
+  color: #fff;
+  width: 300px;
+  height:150px;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow:2px 8px 16px rgba(47, 90, 126, 0.5)
+}.card:hover{
+  transform: scale(1.02);
+  opacity:0.8;
+  box-shadow:2px 8px 16px rgba(143, 5, 124, 0.4);
+
+}
+
+.img-container{
+  align-items: center;
+  max-width: 300px;
+  min-height:150px;
+
+}
+img{
+  width: 100%;
+  object-fit: cover;
+  height:100%;
+  border-radius: 15px 15px 0px 0px;
+
+}
+.conent-container-p{
+  background: rgb(209, 207, 207);
+  color: #fff;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  flex-direction: column;
+  border-radius: 0px 0px 15px 15px;
+ 
+}h4{
+  margin-left: 10px;
+  padding-top:5px;
+  padding-bottom:10px;
+  color: rgb(28, 66, 116);
+  font-size:18px;
+  align-items: center;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+p{
+  margin-left: 10px;
+  color: rgb(2, 2, 2)
+}
+
+/* animation */
+
+
+/* active */
+.active {
+  color: #fff;
+  background: rgb(28, 90, 126);
+}
+.active-contente{
+  display: block;
+}
+
+  
